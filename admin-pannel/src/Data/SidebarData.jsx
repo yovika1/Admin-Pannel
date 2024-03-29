@@ -7,6 +7,7 @@ import { GoDuplicate } from "react-icons/go";
 import { FaStar, FaUser } from 'react-icons/fa';
 import { HiPlusCircle } from 'react-icons/hi';
 import { IoMdSettings } from 'react-icons/io';
+import { PiFlagBannerFill } from 'react-icons/pi';
 
 
 export const SideBarMenu = [
@@ -65,6 +66,11 @@ export const SideBarMenu = [
           name: 'Product List',
           icon: HiMiniClipboardDocumentList ,
           link:"/List"
+        },
+        {
+          name: 'Banner',
+          icon: PiFlagBannerFill  ,
+          link:"/Banners"
         },
  
       ],
