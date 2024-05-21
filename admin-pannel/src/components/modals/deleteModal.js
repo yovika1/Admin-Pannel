@@ -4,7 +4,7 @@ export const DeleteModal = ({ isOpen, onClose, handleDelete, productId }) => {
   return (
     <>
       {isOpen && (
-        <div className="flex justify-center h-screen w-[83vw] md:w-[80vw] absolute top-0 items-center bg-[rgb(0 0 0 / 56%)]">
+        <div className="flex justify-center h-screen w-[83vw] md:w-[80vw]  top-0 fixed items-center bg-[rgb(0 0 0 / 56%)]">
           <div className="modal bg-neutral-900 w-72 z-10 rounded-md h-36 text-center ">
             <div className="modal-content">
               <span className="close" onClick={onClose}>

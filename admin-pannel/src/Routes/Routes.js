@@ -6,7 +6,8 @@ import { Dashboard } from "../components/dashboard/DashBoard";
 import Cookies from "js-cookie";
 import { Orders } from "../page/Orders";
 
-import { Customers } from "../page/Customers";
+import { 
+  Customers } from "../page/Customers";
 import { Coupon } from "../page/Coupon";
 import { Transition } from "../page/Transition";
 import { Brand } from "../page/Brand";

@@ -100,14 +100,14 @@ export const ProductDetailsPage = () => {
     </div>
 
 </div>
-<UpdateDetails
-isOpen={isModalOpen}
-onClose={closeModal}
-product={selectedProduct}
-onSubmit={getDetails}
->
+    <UpdateDetails
+    isOpen={isModalOpen}
+    onClose={closeModal}
+    product={selectedProduct}
+    onSubmit={getDetails}
+    >
 
-</UpdateDetails> 
+    </UpdateDetails> 
 </>
 
 

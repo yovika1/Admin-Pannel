@@ -1,7 +1,6 @@
 import Cookies from "js-cookie";
 import React, { useState } from "react";
 import { FaUserCircle } from "react-icons/fa";
-import { FiSearch } from "react-icons/fi";
 import { IoMdNotifications } from "react-icons/io";
 
 
@@ -16,15 +15,7 @@ export const Header = () => {
     <>
       <div className=" h-14 gap-4 w-full shadow-lg justify-end flex  bg-gray-900 cursor-pointer items-end  ">
         <div className=" flex sm:mr-20 md:mr-[34%] lg:mr-[56%]">
-      <p className="  h-6 mt-2 ml-1 absolute item-center flex  w-6 rounded-sm  text-lg">
-          <FiSearch/>
-          </p>
-        <div className="flex rounded-md mb-2 ">   
-        <input 
-        type="search"
-        placeholder="search"
-        className="flex rounded-lg  text-white py-1  bg-stone-300 px-8 "/>
-  </div>
+   =
   </div>
         <p className="text-2xl flex drop shadow-lg text-violet-600 mb-3">
           <IoMdNotifications />

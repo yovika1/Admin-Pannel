@@ -7,12 +7,7 @@ export const Banner = () => {
   const [loading, setLoading] = useState(false);
   const [productImage, setProductImage] = useState(null);
   const [imagesFile, setImagesFile] = useState(null);
-  const [searchQuery, setSearchQuery] = useState("");
-  const [expand, setExpand] = useState(false);
 
-  const handleSearchIconClick = () => {
-    setExpand(!expand);
-  };
 
   const handleImageChange = (image) => {
     console.log(image)
