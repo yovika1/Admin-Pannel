@@ -19,7 +19,7 @@ export const AddProduct = ({ reloadProductList }) => {
   const [editorValue, setEditorValue] = useState(
     RichTextEditor.createEmptyValue()
   );
-
+  const categories = ["Electronics", "Fashion","Home","Toys","Sports"]
   const availableSizes = ["S", "M", "L", "XL", "XXL"];
 
   const [selectedSizes, setSelectedSizes] = useState([]);
@@ -66,6 +66,7 @@ export const AddProduct = ({ reloadProductList }) => {
           productBrief: "",
           price: "",
           discount: "",
+          category:"",
           sizes: [],
         });
         setImage(null);
@@ -118,7 +119,7 @@ export const AddProduct = ({ reloadProductList }) => {
   // }
   return (
     // <div className={`bg-white ${bgcolor}`}>
-    <div className="bg-slate-800 bg-center min-h-screen flex justify-center items-center ml-28 ">
+    <div className="bg-slate-800 bg-center min-h-screen flex justify-center items-center relative">
       <div className="relative">
         {loading && (
           <div className="absolute inset-0 flex items-center justify-center filter-blur-lg bg-opacity-50 z-50">
@@ -168,6 +169,25 @@ export const AddProduct = ({ reloadProductList }) => {
                   onChange={handleChange}
                 />
               </div>
+              <div className="mb-4">
+            <label htmlFor="category" className="block mb-2 font-semibold">
+              Category
+            </label>
+            <select
+              id="category"
+              value={addProduct.category}
+              name="category"
+              className="w-full border border-gray-300 text-gray-500 rounded px-3 py-2 bg-transparent"
+              onChange={handleChange}
+            >
+              <option value="">Select a category</option>
+              {categories.map((category) => (
+                <option key={category} value={category}>
+                  {category}
+                </option>
+              ))}
+            </select>
+          </div>
               <div className="mb-4">
                 <label
                   htmlFor="productBrief"

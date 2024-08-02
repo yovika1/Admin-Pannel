@@ -159,7 +159,7 @@ export const ProductList = () => {
                     {item.productTitle}
                   </td>
                   <td className="px-6 py-4 font-semibold ">{item.quantity}</td>
-                  <td className="px-6 py-4 flex font-semibold mt-11 text-gray-900 dark:text-white">
+                  <td className="px-6 py-4 flex font-semibold  lg:mt-[77px] text-gray-900 dark:text-white">
                     <p className="flex items-center">
                       <FaRupeeSign />
                     </p>

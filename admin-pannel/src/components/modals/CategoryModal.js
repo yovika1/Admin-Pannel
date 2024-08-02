@@ -15,7 +15,7 @@ export const CategoryModal = ({ iisOpen, onCloseModal, categoryProduct, onSave }
               <div className="relative bg-white rounded-lg shadow">
                 <div className="flex items-center justify-between p-4 border-b rounded-t">
                   <h3 className="text-lg font-semibold text-gray-900">
-                   Add Product
+                    Products Category
                   </h3>
                   <button
                     type="button"

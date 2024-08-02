@@ -14,7 +14,7 @@ function MainTemplate() {
   return (
     <>
       <section className="flex w-screen">
-        <div className="fixed">
+        <div className="fixed z-10">
         <div
           className={`flex bg-black min-h-screen sm:${!expand?"w-14":"w-60"} ${
             expand ? " w-60 " : "w-14"
